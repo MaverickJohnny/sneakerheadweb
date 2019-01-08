@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<hr>
+<form method="POST">
+    <label>商店名: </label> <input type="text" name="username"><br>
+    <label>城市: </label> <input type="text" name="password"><br>
+    <label>面积: </label> <input type="text" name="password2"><br>
+    <input type="submit" value="提交"><br>
+    {% for message in get_flashed_messages() %}
+        {{ message }}
+    {% endfor %}
+</form>
+<hr>
+<form method = "POST">
+    {{ form.csrf_token() }}
+    {# form 是传进来的loginform类, username.label 就是获取'用户名'，而form.username 代表的这个输入框  #}
+    {{ form.username.label }}{{ form.username }}<br>
+    {{ form.password.label }}{{ form.password }}<br>
+    {{ form.password2.label }}{{ form.password2 }}<br>
+    {{ form.submit }}<br>
+</form>
+<hr>
+
+<a href="#" class="image"><img src="{{ url_for('static', filename='images/pic03.jpg') }}" alt="" data-position="25% 25%" /></a>
+
+
+<body>
+</body>
+</html>

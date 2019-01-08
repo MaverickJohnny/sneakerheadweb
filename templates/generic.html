@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<!--
+	Aerial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>SneakerHead SKY</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href= "{{ url_for('static', filename='css/main.css') }}" />
+		<noscript><link rel="stylesheet" href="{{ url_for('static', filename='css/noscript.css') }}" /></noscript>
+	</head>
+	<body class="is-preload">
+		<div id="wrapper">
+			<div id="bg"></div>
+			<div id="overlay"></div>
+			<div id="main">
+				<!-- Header -->
+					<header id="header">
+						<h1>SneakerHeadCenter</h1>
+                        <p> &nbsp;&bull;&nbsp; 查找您鞋柜中的一双鞋 &nbsp;&bull;&nbsp; </p>
+                        <!--<p>{%for record in myData %}
+                            {{ record.storeNum }}
+                                {{ record.city }}
+                                {{ record.area }}
+                            {% endfor %}</p>
+                            -->
+                        <p>
+                            <form method="POST">
+    <label>球鞋名: </label> <input type="text" name="shoename" style = "color:black"><br>
+    <label>发售期:  </label> <input type="text" name="data" style = "color:black"><br>
+    <label>鞋配色:  </label> <input type="text" name="color" style = "color:black"><br>
+    <input type="submit" value="提交" style = "color:black"><br>
+
+                        <a href="search3" class="icon fa-search fa-lg">&ensp;只想查鞋名？点这里！</a><br><br>
+</form>
+                        </p>
+						<nav>
+							<ul>
+								<li><a href="https://im.qq.com" class="icon fa-qq"><span class="label">QQ</span></a></li>
+								<li><a href="https://wx.qq.com" class="icon fa-wechat"><span class="label">wechat</span></a></li>
+								<li><a href="https://weibo.com" class="icon fa-weibo"><span class="label">weibo</span></a></li>
+								<li><a href="https://github.com" class="icon fa-github"><span class="label">Github</span></a></li>
+								<li><a href="https://mail.163.com/" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<span class="copyright">&copy; SharlenChance DesignedBy: <a href="introduce">迟山</a>.</span>
+					</footer>
+
+			</div>
+		</div>
+		<script>
+			window.onload = function() { document.body.classList.remove('is-preload'); }
+			window.ontouchmove = function() { return false; }
+			window.onorientationchange = function() { document.body.scrollTop = 0; }
+		</script>
+	</body>
+</html>

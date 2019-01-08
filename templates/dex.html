@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<!--
+	Aerial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>SneakerHead SKY</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href= "{{ url_for('static', filename='css/main.css') }}" />
+		<noscript><link rel="stylesheet" href="{{ url_for('static', filename='css/noscript.css') }}" /></noscript>
+	</head>
+	<body class="is-preload">
+		<div id="wrapper">
+			<div id="bg"></div>
+			<div id="overlay"></div>
+			<div id="main">
+				<!-- Header -->
+					<header id="header">
+						<h1>SneakerHeadCenter</h1>
+                        <p>
+                            <a href="display">鞋柜</a><hr><br>
+                            <a href="search" class="icon fa-search fa-lg">&ensp;查找你喜欢的球鞋</a><br><br>
+                            <a href="insert" class="icon fa-plus-square fa-lg">&ensp;增加你的球鞋信息</a><br><br>
+                            <a href="change" class="icon fa-rotate-right fa-lg">&ensp;修改你的球鞋信息</a><br><br>
+                            <a href="delete" class="icon fa-minus-square fa-lg">&ensp;删除你的球鞋信息</a><br><br>
+                        </p>
+                        <p>
+                            contact us:
+                        </p>
+						<nav>
+							<ul>
+								<li><a href="https://user.qzone.qq.com/578825184/main" class="icon fa-qq"><span class="label">QQ</span></a></li>
+								<li><a href="https://wx.qq.com" class="icon fa-wechat"><span class="label">wechat</span></a></li>
+								<li><a href="https://weibo.com/u/5129175822" class="icon fa-weibo"><span class="label">weibo</span></a></li>
+								<li><a href="https://github.com" class="icon fa-github"><span class="label">Github</span></a></li>
+								<li><a href="https://mail.163.com/" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<span class="copyright">&copy; SharlenChance DesignedBy: <a href="introduce">迟山</a>.</span>
+					</footer>
+
+			</div>
+		</div>
+		<script>
+			window.onload = function() { document.body.classList.remove('is-preload'); }
+			window.ontouchmove = function() { return false; }
+			window.onorientationchange = function() { document.body.scrollTop = 0; }
+		</script>
+	</body>
+</html>
